@@ -2,10 +2,11 @@
  * @Author: zwz
  * @Date: 2023-05-03 22:20:02
  * @LastEditors: zwz
- * @LastEditTime: 2023-11-20 23:15:18
+ * @LastEditTime: 2023-11-27 22:19:33
  * @Description: 请填写简介
  */
 // import type { LoginResult } from '@/types/member'
+import type { LoginResult } from '@/types/member'
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
@@ -17,7 +18,7 @@ export const useMemberStore = defineStore(
     const profile = ref()
 
     // 保存会员信息，登录时使用
-    const setProfile = (val) => {
+    const setProfile = (val: LoginResult) => {
       profile.value = val
     }
 
