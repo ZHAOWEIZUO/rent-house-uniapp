@@ -31,6 +31,7 @@ const loginSuccess = (profile: LoginResult) => {
     icon: 'none',
     mask: true,
   })
+  // 延迟半秒钟跳转页面
   setTimeout(() => {
     uni.switchTab({ url: '/pages/my/my' })
   }, 500)

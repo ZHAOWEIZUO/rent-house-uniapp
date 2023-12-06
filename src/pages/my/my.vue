@@ -11,12 +11,11 @@
     <button
       @tap="
         memberStore.setProfile({
-          nickname: '黑马',
+          nickname: '昵称',
         })
       "
       size="mini"
       :plain="true"
-      type="primary"
     >
       保存用户信息
     </button>

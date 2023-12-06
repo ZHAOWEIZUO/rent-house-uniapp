@@ -2,7 +2,7 @@
  * @Author: zwz
  * @Date: 2023-08-07 14:57:44
  * @LastEditors: zwz
- * @LastEditTime: 2023-11-22 08:32:55
+ * @LastEditTime: 2023-12-06 10:26:32
  * @Description: 请填写简介
 -->
 <script setup lang="ts">
@@ -19,8 +19,9 @@ const { safeAreaInsets } = uni.getSystemInfoSync()
     </view>
     <!-- 搜索条 -->
     <view class="search">
-      <text class="icon-search">你想住哪里？</text>
-      <!-- <text class="icon-scan"></text> -->
+      <!-- <text class="icon-search">你想住哪里？</text>
+      <text class="icon-scan"></text> -->
+      <uni-search-bar placeholder="自定义背景色" bgColor="#EEEEEE" />
     </view>
   </view>
 </template>
